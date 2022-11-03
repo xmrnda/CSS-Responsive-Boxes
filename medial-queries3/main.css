@@ -31,7 +31,7 @@ body {
   margin: 15px 15px 10px 10px;
 }
 
-.b, .c, .d, {
+.b, .c, .d {
   flex-basis: 20%;
   margin: 10px;
 }
