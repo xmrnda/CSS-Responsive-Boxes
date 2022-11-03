@@ -1,3 +1,66 @@
 body {
-  background: papayawhip;
+  background: lightblue;
+  align-items: center;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.container-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 70%;
+  min-height: 45vh;
+}
+
+.a, .b, .c, .d, .e, .f {
+  border-style: solid;
+  text-align: center;
+  padding: 1em;
+  flex-grow: 1;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.a {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+
+.b {
+  flex-grow: 2;
+  flex-basis: 80%;
+  height: 50vh;
+}
+
+.c, .d, .e {
+  flex-basis: 25%;
+}
+
+@media (max-width: 600px){
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100%;
+    max-width: 100vw;
+  }
+  
+  .b {
+    flex-basis: 100%;
+  }
+
+  .container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+}
+
+
